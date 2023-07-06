@@ -1,0 +1,5 @@
+---
+roles:
+  - name: marcelofpfelix.deploy_container
+collections:
+  - name: community.docker

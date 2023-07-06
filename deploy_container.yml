@@ -1,0 +1,11 @@
+---
+- name: Deploy {{ container }}
+  hosts: "{{ target | default('localhost') }}"
+  become: true
+  tasks:
+    - name: Validations
+      ansible.builtin.fail:
+        msg: "container/group is not defined"
+      when: container is not defined and group is not defined
+  roles:
+    - role: deploy-container
