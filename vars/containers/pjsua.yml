@@ -17,4 +17,4 @@ default:
   SIP_SERVER_HOST: "{{ net.pfx }}.{{ id.kamailio }}"
   SIP_SERVER_PORT: "5060"
   SIP_TRANSPORT: "tcp"
-  SIP_PASSWORD: "mypassword"
+  SIP_PASSWORD: "{{ password }}"

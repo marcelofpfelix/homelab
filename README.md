@@ -4,6 +4,10 @@ Homelab automation using Ansible
 
 ### Configuration management
 
+```console
+  ## examples
+ansible-playbook server-config.yml"
+```
 
 ### Deploy Containers
 

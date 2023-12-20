@@ -1,0 +1,5 @@
+---
+- name: Updating {{ target | default('desktop') }}
+  hosts: "{{ target | default('desktop') }}"
+  roles:
+    - role: home

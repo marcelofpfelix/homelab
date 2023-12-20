@@ -12,4 +12,4 @@ default:
   PROXY_LOCATION: "pi.hole"
   ServerIP: "127.0.0.1"
   TZ: "Etc/UTC"
-  WEBPASSWORD: "{{ passwrod }}"
+  WEBPASSWORD: "{{ password }}"
