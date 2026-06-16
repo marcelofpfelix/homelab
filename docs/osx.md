@@ -30,9 +30,27 @@ sudo pmset -a displaysleep 0 sleep 0 disksleep 0 networkoversleep 1
 
 Useful package groups to model in Ansible:
 
-- Shell: `zoxide`, `starship`, `atuin`, `fzf`, `direnv`
-- CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`
+- Shell: `tmux`, `zoxide`, `starship`, `atuin`, `fzf`, `eza`, `direnv`,
+  `television`, `tmuxup`
+- CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`, `iproute2mac`, `ansible`,
+  `beads`
 - Containers: `colima`, `kubectl`
 - Editors: `nvim`
 - Sync: `syncthing`
 - Security: `pinentry-mac`
+
+Additional package sources to evaluate:
+
+- Homebrew taps: `hashicorp/tap`, `sielicki/dystemctl`
+- Homebrew packages from taps: `hashicorp/tap/vault`
+- Homebrew casks: `font-fira-code-nerd-font`
+- Tentative casks: `codex`; npm may remain the working install path
+- Node tools: `clawdbot`, `claude-code`, `clawdhub`, `@telnyx/api-cli`
+- Go tools: `github.com/prometheus/alertmanager/cmd/amtool@latest`
+- Git tools: `romkatv/zsh-defer` under `/opt/git/romkatv/zsh-defer`
+
+Runtime setup notes:
+
+- Install Node from the repository `.nvmrc` and run `nvm use`.
+- Split shell profile snippets that differ between Linux and Darwin.
+- Ensure `/opt/homebrew/bin` is available before managed shell tools run.

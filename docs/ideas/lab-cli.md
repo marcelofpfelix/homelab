@@ -6,6 +6,7 @@ Potential implementation options:
 
 - Go with Cobra
 - Go with Bubble Tea for interactive views
+- Go terminal UI libraries such as `tcell`, `gocui`, or `tview`
 - A small shell wrapper if the command surface stays simple
 
 Candidate commands:
