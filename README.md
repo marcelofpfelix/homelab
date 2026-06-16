@@ -2,6 +2,9 @@
 
 Homelab automation using Ansible
 
+See [docs/private-data.md](docs/private-data.md) for how private inventory,
+templates, and secrets are handled.
+
 ### Configuration management
 
 ```console

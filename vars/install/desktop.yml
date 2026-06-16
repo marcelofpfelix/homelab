@@ -1,0 +1,12 @@
+# temporary record of the software used
+# use nix to install
+
+distro: ubuntu
+  # alternative: arch, debian
+
+ui:
+  - i3 # wm
+  - polybar
+
+cli:
+  - bat

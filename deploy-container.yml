@@ -2,6 +2,9 @@
 - name: Deploy {{ container }}
   hosts: "{{ target | default('localhost') }}"
   become: true
+  pre_tasks:
+    - name: Load homelab secrets
+      ansible.builtin.include_tasks: tasks/load-secrets.yml
   tasks:
     - name: Validations
       ansible.builtin.fail:

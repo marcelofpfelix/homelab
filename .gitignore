@@ -24,6 +24,8 @@ cache/
 
 *.retry
 .vault_pass
+.ansible/
+.serena/
 
 
 ###############################################################################
@@ -33,3 +35,6 @@ cache/
 vars/work/
 group_vars/
 host_vars/
+templates/
+tasks/
+scripts/
