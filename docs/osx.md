@@ -33,7 +33,7 @@ Useful package groups to model in Ansible:
 - Shell: `tmux`, `zoxide`, `starship`, `atuin`, `fzf`, `eza`, `direnv`,
   `television`, `tmuxup`
 - CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`, `iproute2mac`, `ansible`,
-  `beads`
+  `beads`, `task`, `taskwarrior-tui`
 - Containers: `colima`, `kubectl`
 - Editors: `nvim`
 - Sync: `syncthing`
