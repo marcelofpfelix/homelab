@@ -10,5 +10,8 @@ ui:
 
 cli:
   - bat
+  - docker-buildx
+  - herdr
   - task
   - taskwarrior-tui
+  - wireshark
