@@ -33,7 +33,8 @@ Useful package groups to model in Ansible:
 - Shell: `tmux`, `zoxide`, `starship`, `atuin`, `fzf`, `eza`, `direnv`,
   `television`, `tmuxup`
 - CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`, `iproute2mac`, `ansible`,
-  `beads`, `task`, `taskwarrior-tui`, `wireshark`, `herdr`
+  `beads`, `task`, `taskwarrior-tui`, `timewarrior`, `tock`, `wireshark`,
+  `herdr`
 - Containers: `colima`, `kubectl`, `docker-buildx`
 - Editors: `nvim`
 - Sync: `syncthing`
@@ -52,5 +53,7 @@ Additional package sources to evaluate:
 Runtime setup notes:
 
 - Install Node from the repository `.nvmrc` and run `nvm use`.
+- Time tracking uses `timewarrior` plus `tock`; their runtime configuration is
+  tracked in the dotfiles repo.
 - Split shell profile snippets that differ between Linux and Darwin.
 - Ensure `/opt/homebrew/bin` is available before managed shell tools run.
