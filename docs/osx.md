@@ -18,6 +18,30 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 ```
 
+
+## Local GitHub Actions
+
+Install `act` to run GitHub Actions workflows on the local Docker/Colima daemon before pushing:
+
+```sh
+brew install act
+act --version
+```
+
+For repos that use Colima on this host, prefer the real socket path instead of the `~/.colima` symlink when `act` needs to mount the Docker socket:
+
+```sh
+DOCKER_HOST=unix:///Volumes/NVMe/docker/colima/default/docker.sock \
+  act push -W .github/workflows/ci.yml -j check \
+  -P ubuntu-latest=catthehacker/ubuntu:act-latest \
+  --container-architecture linux/arm64 \
+  --container-daemon-socket /Volumes/NVMe/docker/colima/default/docker.sock
+```
+
+The symlinked path can fail with `mkdir /Users/marcelof/.colima: file exists` during container startup. `act` may also warn that GitHub cache restore/save failed; that is acceptable when the job itself succeeds.
+
+`basecamp/gh-signoff` is complementary, not a replacement for `act`: use `act` to execute the workflow locally, then optionally use `gh signoff` to publish a GitHub commit status for a PR after local checks pass. Requiring signoff changes GitHub branch protection, so keep it as an explicit repo policy decision.
+
 ## System
 
 Prevent sleep on managed desktop hosts:

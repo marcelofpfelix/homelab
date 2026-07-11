@@ -9,6 +9,7 @@ ui:
   - polybar
 
 cli:
+  - act
   - bat
   - docker-buildx
   - herdr
