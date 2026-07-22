@@ -63,3 +63,32 @@ Possible naming pools:
 
 Old scratch vault commands were intentionally not copied here. The supported
 secret workflow is documented in `docs/private-data.md`.
+
+## Plaintext Finance Tooling
+
+Local hledger tooling for the wiki finance ledger lives on the workstation, not
+in homelab services.
+
+Installed tools:
+
+- `hledger` via Homebrew, currently `hledger 1.52.1`.
+- `puffin` via Homebrew tap `siddhantac/puffin`, currently `2.1.5`.
+- `hledger-mcp` via npm package `@iiatlas/hledger-mcp`, currently `1.0.5`.
+
+Primary journal:
+
+```sh
+~/gwt/marcelofpfelix/wiki/main/ledger/main.journal
+```
+
+Useful commands:
+
+```sh
+hledger -f ~/gwt/marcelofpfelix/wiki/main/ledger/main.journal check
+hledger -f ~/gwt/marcelofpfelix/wiki/main/ledger/main.journal bal --depth 2
+puffin -cfg ~/gwt/marcelofpfelix/wiki/main/ledger/dev/puffin.json
+hledger-mcp ~/gwt/marcelofpfelix/wiki/main/ledger/main.journal --read-only
+```
+
+Start MCP in read-only mode first. Enable write tools only after the ledger
+import/migration path is fully validated.

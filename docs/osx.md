@@ -58,7 +58,7 @@ Useful package groups to model in Ansible:
   `television`, `tmuxup`
 - CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`, `iproute2mac`, `ansible`,
   `beads`, `task`, `taskwarrior-tui`, `timewarrior`, `tock`, `wireshark`,
-  `herdr`
+  `herdr`, `hunk`, `sipexer`, `pi`, `hermes`
 - Containers: `colima`, `kubectl`, `docker-buildx`
 - Editors: `nvim`
 - Sync: `syncthing`
@@ -66,13 +66,22 @@ Useful package groups to model in Ansible:
 
 Additional package sources to evaluate:
 
-- Homebrew taps: `hashicorp/tap`, `sielicki/dystemctl`
-- Homebrew packages from taps: `hashicorp/tap/vault`
+- Homebrew taps: `hashicorp/tap`, `sielicki/dystemctl`, `modem-dev/tap`
+- Homebrew packages from taps: `hashicorp/tap/vault`, `modem-dev/tap/hunk`
 - Homebrew casks: `font-fira-code-nerd-font`
 - Tentative casks: `codex`; npm may remain the working install path
 - Node tools: `clawdbot`, `claude-code`, `clawdhub`, `@telnyx/api-cli`
+- Agent CLIs:
+  - `pi` via `npm install -g --ignore-scripts @earendil-works/pi-coding-agent`.
+    The npm `latest` metadata reported `0.80.7`, but the installed package and
+    `pi --version` reported `0.80.3`.
+  - `hermes` via `pipx install hermes-agent`, currently `Hermes Agent v0.15.2`.
+    Prefer this PyPI/pipx install over the unofficial npm bridge
+    `hermes-agent`, which runs a Python install from npm `postinstall`.
 - Go tools: `github.com/prometheus/alertmanager/cmd/amtool@latest`
 - Git tools: `romkatv/zsh-defer` under `/opt/git/romkatv/zsh-defer`
+- GitHub release tools: `sipexer` from `miconda/sipexer` because it is not in
+  Homebrew core; install the Darwin arm64 release into `~/bin/sipexer`.
 
 Runtime setup notes:
 

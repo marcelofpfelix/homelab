@@ -41,6 +41,10 @@ cli:
   - bat
   - docker-buildx
   - herdr
+  - hunk
+  - hermes-agent
+  - pi-coding-agent
+  - sipexer
   - task
   - taskwarrior-tui
   - timewarrior

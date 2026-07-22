@@ -7,5 +7,6 @@ service_working_directory: /Users/marcelof/gwt/marcelofpfelix/lagostim/main
 service_environment:
   LAGOSTIM_DOCKER_ROOT: /Users/marcelof/docker/lagostim
   PERSONAL_HERMES_API_SERVER_KEY_GOPASS_PATH: lagostim/personal-hermes/api-server-key
+  PERSONAL_HERMES_TELEGRAM_BOT_TOKEN_GOPASS_PATH: homelab/telegram/eusebio
   LITELLM_API_KEY_GOPASS_PATH: ai/litellm
   OPENAI_API_KEY_GOPASS_PATH: ai/openai
