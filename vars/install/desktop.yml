@@ -7,6 +7,33 @@ distro: ubuntu
 ui:
   - i3 # wm
   - polybar
+  - hyprland # wayland compositor
+  - hyprland-protocols
+  - xdg-desktop-portal-hyprland
+  - quickshell
+  - nixGL # Nix GL wrapper required for Nix Hyprland on Ubuntu
+  - grim
+  - slurp
+  - swappy
+  - brightnessctl
+  - wl-clipboard
+  - espanso-wayland # text expansion for Wayland; installed from upstream deb
+  - cliphist
+  - playerctl
+  - pavucontrol
+  - mpv # local and YouTube playlist playback backend
+  - ffmpeg # generated ambience and local audio decode backend
+  - hyprlock
+  - hyprpicker
+  - zenity
+  - jq
+  - libnotify-bin
+  - network-manager
+  - pulseaudio-utils
+  - swaylock
+  - wireplumber
+  - xdg-utils
+  - dex
 
 cli:
   - act
