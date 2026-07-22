@@ -17,6 +17,7 @@ ui:
   - swappy
   - brightnessctl
   - wl-clipboard
+  - wev
   - espanso-wayland # text expansion for Wayland; installed from upstream deb
   - cliphist
   - playerctl
