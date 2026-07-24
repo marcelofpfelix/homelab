@@ -5,19 +5,22 @@ distro: ubuntu
   # alternative: arch, debian
 
 ui:
-  - i3 # wm
-  - polybar
   - hyprland # wayland compositor
   - hyprland-protocols
   - xdg-desktop-portal-hyprland
   - quickshell
+  - walker
+  - elephant # Walker provider backend
   - nixGL # Nix GL wrapper required for Nix Hyprland on Ubuntu
   - grim
   - slurp
   - swappy
+  - tesseract-ocr
+  - wf-recorder
   - brightnessctl
   - wl-clipboard
   - wev
+  - libinput-tools
   - espanso-wayland # text expansion for Wayland; installed from upstream deb
   - cliphist
   - playerctl
@@ -26,12 +29,17 @@ ui:
   - ffmpeg # generated ambience and local audio decode backend
   - hyprlock
   - hyprpicker
-  - zenity
   - jq
   - libnotify-bin
   - network-manager
+  - network-manager-gnome # nm-connection-editor for the Quickshell network panel
   - pulseaudio-utils
   - swaylock
+  - lm-sensors # fan speed status
+  - upower # battery percentage and health
+  - power-profiles-daemon # powerprofilesctl backend
+  - bluez # Bluetooth D-Bus backend for Quickshell
+  - xdg-desktop-portal-gtk # GTK file chooser portal backend
   - wireplumber
   - xdg-utils
   - dex
@@ -50,3 +58,7 @@ cli:
   - timewarrior
   - tock
   - wireshark
+
+archive_x11:
+  - i3 # archived X11 wm
+  - polybar # archived X11 bar
