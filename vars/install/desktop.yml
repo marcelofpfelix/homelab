@@ -47,6 +47,7 @@ ui:
 cli:
   - act
   - bat
+  - chrony # native NTP time synchronization
   - docker-buildx
   - herdr
   - hunk
