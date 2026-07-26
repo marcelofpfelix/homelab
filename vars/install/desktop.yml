@@ -15,6 +15,7 @@ ui:
   - grim
   - slurp
   - swappy
+  - imagemagick-6.q16 # identify/compare for Quickshell screenshot smoke assertions
   - tesseract-ocr
   - wf-recorder
   - brightnessctl
