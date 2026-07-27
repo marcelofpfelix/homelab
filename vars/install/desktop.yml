@@ -9,6 +9,7 @@ ui:
   - hyprland-protocols
   - xdg-desktop-portal-hyprland
   - quickshell
+  - board # local status renderer used by Quickshell and tmux
   - walker
   - elephant # Walker provider backend
   - nixGL # Nix GL wrapper required for Nix Hyprland on Ubuntu
