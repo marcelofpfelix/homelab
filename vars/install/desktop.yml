@@ -36,6 +36,7 @@ ui:
   - libnotify-bin
   - network-manager
   - network-manager-gnome # nm-connection-editor for the Quickshell network panel
+  - obsidian # Wayland note app installed from upstream deb
   - pulseaudio-utils
   - swaylock
   - lm-sensors # fan speed status
