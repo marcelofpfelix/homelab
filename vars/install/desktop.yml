@@ -20,6 +20,7 @@ ui:
   - tesseract-ocr
   - wf-recorder
   - brightnessctl
+  - ddcutil # external monitor DDC brightness controls
   - wl-clipboard
   - wev
   - libinput-tools
