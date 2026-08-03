@@ -92,3 +92,13 @@ hledger-mcp ~/gwt/marcelofpfelix/wiki/main/ledger/main.journal --read-only
 
 Start MCP in read-only mode first. Enable write tools only after the ledger
 import/migration path is fully validated.
+
+## Desktop Time Sync
+
+Desktop hosts use `chrony`. The home playbook sets `makestep 1 -1` so large clock drift is stepped immediately even after chrony has been running for days. Ubuntu default `makestep 1 3` only permits stepping during the first three updates, which can leave a resumed laptop visibly wrong while chrony slowly slews.
+
+Immediate repair command when the clock is already wrong:
+
+```sh
+sudo chronyc makestep
+```

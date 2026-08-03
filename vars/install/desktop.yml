@@ -51,7 +51,7 @@ ui:
 cli:
   - act
   - bat
-  - chrony # native NTP time synchronization
+  - chrony # native NTP time synchronization; home.yml keeps makestep 1 -1
   - docker-buildx
   - herdr
   - hunk

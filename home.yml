@@ -6,3 +6,24 @@
       ansible.builtin.include_tasks: tasks/load-secrets.yml
   roles:
     - role: home
+
+  post_tasks:
+    - name: Keep chrony willing to step large clock offsets
+      become: true
+      ansible.builtin.lineinfile:
+        path: /etc/chrony/chrony.conf
+        regexp: '^makestep\s+'
+        line: "makestep 1 -1"
+        insertafter: EOF
+      notify: Restart chrony
+      when: ansible_facts.os_family == "Debian"
+      tags:
+        - home
+        - chrony
+
+  handlers:
+    - name: Restart chrony
+      become: true
+      ansible.builtin.service:
+        name: chrony
+        state: restarted
