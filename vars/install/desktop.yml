@@ -52,6 +52,7 @@ cli:
   - docker-buildx
   - herdr
   - hunk
+  - oath-toolkit
   - hermes-agent
   - pi-coding-agent
   - sipexer

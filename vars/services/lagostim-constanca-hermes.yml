@@ -8,5 +8,7 @@ service_environment:
   LAGOSTIM_DOCKER_ROOT: /Users/marcelof/docker/lagostim
   CONSTANCA_HERMES_API_SERVER_KEY_GOPASS_PATH: lagostim/constanca-hermes/api-server-key
   CONSTANCA_HERMES_TELEGRAM_BOT_TOKEN_GOPASS_PATH: homelab/telegram/constanca
+  CONSTANCA_HERMES_GOGCLI_BUNDLE_GOPASS_PATH: lagostim/constanca-hermes/gogcli-bundle.tgz
+  CONSTANCA_HERMES_GOG_KEYRING_PASSWORD_GOPASS_PATH: lagostim/constanca-hermes/gog-keyring-password
   LITELLM_API_KEY_GOPASS_PATH: ai/litellm
   OPENAI_API_KEY_GOPASS_PATH: ai/openai

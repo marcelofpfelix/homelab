@@ -58,7 +58,7 @@ Useful package groups to model in Ansible:
   `television`, `tmuxup`
 - CLI: `gh`, `uv`, `coreutils`, `gum`, `gopass`, `iproute2mac`, `ansible`,
   `beads`, `task`, `taskwarrior-tui`, `timewarrior`, `tock`, `wireshark`,
-  `herdr`, `hunk`, `sipexer`, `pi`, `hermes`
+  `herdr`, `hunk`, `oath-toolkit`, `sipexer`, `pi`, `hermes`
 - Containers: `colima`, `kubectl`, `docker-buildx`
 - Editors: `nvim`
 - Sync: `syncthing`
