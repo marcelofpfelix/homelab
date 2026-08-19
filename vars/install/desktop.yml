@@ -63,6 +63,7 @@ cli:
   - taskwarrior-tui
   - timewarrior
   - tock
+  - try # tobi/try experiment directory manager; installed with Homebrew
   - wireshark
 
 archive_x11:
