@@ -22,6 +22,7 @@ ui:
   - brightnessctl
   - ddcutil # external monitor DDC brightness controls
   - wl-clipboard
+  - qrencode # Wi-Fi share QR backend for Quickshell
   - wev
   - libinput-tools
   - espanso-wayland # text expansion for Wayland; installed from upstream deb
