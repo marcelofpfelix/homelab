@@ -26,6 +26,7 @@ ui:
   - wev
   - libinput-tools
   - espanso-wayland # text expansion for Wayland; installed from upstream deb
+  - wlrctl # active-window detection for Espanso on wlroots/Hyprland
   - cliphist
   - playerctl
   - pavucontrol
@@ -38,6 +39,7 @@ ui:
   - network-manager
   - network-manager-gnome # nm-connection-editor for the Quickshell network panel
   - obsidian # Wayland note app installed from upstream deb
+  - omawrite # Qt 6 Markdown editor; built from the official omacom-io/omawrite source on Ubuntu
   - pulseaudio-utils
   - swaylock
   - lm-sensors # fan speed status
@@ -53,6 +55,8 @@ cli:
   - act
   - bat
   - chrony # native NTP time synchronization; home.yml keeps makestep 1 -1
+  - cliamp # terminal music player; installed from the bjarneo/cliamp Homebrew tap
+  - dua-cli # interactive disk-usage TUI; installed with Homebrew
   - docker-buildx
   - herdr
   - hunk
