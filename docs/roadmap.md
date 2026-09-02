@@ -20,5 +20,6 @@
 
 ## Local Tooling
 
+- Implement the cross-platform [mise tool installation plan](mise-tools.md).
 - Keep CI based on `uv`, pre-commit, YAML lint, Gitleaks, and ansible-lint.
 - Consider a small `lab` CLI only if repeated local commands become awkward.

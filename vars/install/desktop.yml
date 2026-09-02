@@ -23,6 +23,7 @@ ui:
   - ddcutil # external monitor DDC brightness controls
   - wl-clipboard
   - qrencode # Wi-Fi share QR backend for Quickshell
+  - zbar-tools # offline QR decode validation for the Quickshell Wi-Fi share panel
   - wev
   - libinput-tools
   - espanso-wayland # text expansion for Wayland; installed from upstream deb
@@ -33,6 +34,11 @@ ui:
   - mpv # local and YouTube playlist playback backend
   - ffmpeg # generated ambience and local audio decode backend
   - hyprlock
+  - hyprsunset # night-light daemon for the Omarchy Quickshell service; installed through Nix
+  - fprintd # optional fingerprint enrollment; gated desktop security setup only
+  - libfprint-2-2 # fingerprint runtime; gated desktop security setup only
+  - libfido2-1 # FIDO2 token tools; gated desktop security setup only
+  - libpam-u2f # optional PAM FIDO2 module; never enabled by the home role
   - hyprpicker
   - jq
   - libnotify-bin
@@ -60,6 +66,7 @@ cli:
   - docker-buildx
   - herdr
   - hunk
+  - iperf3 # LAN throughput testing; installed with Homebrew on Linux and macOS
   - oath-toolkit
   - hermes-agent
   - pi-coding-agent
