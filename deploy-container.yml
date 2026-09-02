@@ -11,4 +11,4 @@
         msg: "container/group is not defined"
       when: container is not defined and group is not defined
   roles:
-    - role: deploy-container
+    - role: marcelofpfelix.homelab.service

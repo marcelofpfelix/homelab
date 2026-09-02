@@ -5,4 +5,4 @@
     - name: Load homelab secrets
       ansible.builtin.include_tasks: tasks/load-secrets.yml
   roles:
-    - role: home
+    - role: marcelofpfelix.homelab.home

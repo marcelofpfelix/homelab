@@ -3,4 +3,4 @@
   hosts: "{{ target | default('localhost') }}"
   become: true
   roles:
-    - role: server-config
+    - role: marcelofpfelix.homelab.server

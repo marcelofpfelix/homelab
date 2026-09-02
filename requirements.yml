@@ -1,10 +1,9 @@
 ---
-roles:
-  - name: deploy-container
-    src: https://github.com/marcelofpfelix/ansible-role-deploy-container.git
-    scm: git
-    version: main
 collections:
+  - name: git+https://github.com/marcelofpfelix/ansible-role-home.git
+    type: git
+    version: main
+
   - name: community.docker
   - name: geerlingguy.mac
     version: ">=2.3.0"
